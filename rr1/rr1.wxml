@@ -1,0 +1,41 @@
+<view>
+    <view class="car_item_wrap" >
+        <view class="car_image_wrap">
+        <!--app.globalData.data
+            <image src="../../image/jiadian.jpg" class="car_item_image"></image>
+           
+           -->
+           {{app.globalData.data.pid}}
+            <image src="{{data_sjk[0].pid}}" class="car_item_image"></image>
+        </view>
+        <view class="car_item_title">
+            <view>
+            {{data_sjk[0].goodsName}}
+            </view>
+        </view>
+        <view class="car_item_bot">
+        	<text class="car_item_price">{{data_sjk[0].price}}元</text>
+        	<span class="car_item_del" data-alpha-beta="{{index}}" bindtap="carRemove"></span>
+	        <span class="car_item_operate">
+	        	<span class="car_item_reduce car_item_btn" data-alpha-beta="{{index}}" bindtap="carReduce">-</span>
+	        	<span class="car_item_num" data-alpha-beta="{{index}}" bindtap="carRemove">{{num}}</span>
+            
+            
+	        	<span class="car_item_add car_item_btn" data-alpha-beta="{{index}}" bindtap="carAdd">+</span>
+	        </span>
+        </view>
+    </view>
+</view>
+ 
+
+<view class="car_bot" catchtap="find">
+
+	<view class="car_bot_wrap">
+		总价
+		
+		
+    <span class="car_item_num1" data-alpha-beta="{{index}}" bindtap="carRemove"> {{data_sjk[0].price*num}}    </span>
+    <span class="car_total_money">元</span>
+    <span class="car_order_confirm" bindtap="toPay">写个人信息</span>
+	</view>
+</view>

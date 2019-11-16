@@ -1,0 +1,95 @@
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="goods_infor_top">
+  <view class="goods_title">
+    Huawei/华为Mate 30 Pro超级快充徕卡电影四摄麒麟990 4G智能手机mate30pro
+    <view class="goods_collect_btn" bindtap="collect">
+      <view wx:if="{{iscollect}}">
+        <image src="../../image/icon-aixin.png" class="goods_collect_img"></image>
+      </view>
+      <view wx:else>
+        <image src="../../image/icon-aixin1.png" class="goods_collect_img"></image>
+      </view> 
+      <text wx:if="{{iscollect}}">已收藏</text>
+      <text wx:else>收藏</text>
+    </view>
+  </view>
+  <view class="goods_price">
+    <text>¥5799</text>
+    <text class="goods_old_price">¥6299</text>
+  </view>
+  <view class="goods_deliver">
+    *本产品由 HUAWEI品牌商 提供发货服务。
+  </view>
+</view>
+
+
+
+<view class="goods_infor_raw">
+  <view class="goods_infor_item">
+    <text>【网络类型】</text>4G全网通
+  </view>
+  <view class="goods_infor_item">
+    <text>【机身颜色】</text>亮黑色
+  </view>
+  <view class="goods_infor_item">
+    <text>【套餐类型】</text>官方标配
+  </view>
+  <view class="goods_infor_item">
+    <text>【存储容量】</text>8+256GB
+  </view>
+  <view class="goods_infor_item">
+    <text>【数量】</text>1000
+  </view>
+  
+</view>
+
+
+
+
+<view class="goods_infor_pre">
+  <view class="goods_infor_txt">
+    <view class="goods_infor_brand"></view>
+    <text>好评：屏幕很惊艳质感超好 运行速度：反应速度快非常流畅 通信音质：音质非常好 电池续航：电池很耐用一整天无压力，充电速度非常快速 拍照效果：拍照功能是大亮点，画质很好 其他特色：小米粒很有爱</text>
+  </view>
+</view>
+
+<view class="goods_detail">
+  <view class="goods_detail_title">详细图片</view>
+  <view>
+    
+<image bindload="cusImageLoad" src="../../image/huaweiMate30.png" style="width:{{imageWidth}};height:{{imageHeight}}"></image>
+<image bindload="cusImageLoad" src="../../image/shili.png" style="width:{{imageWidth}};height:{{imageHeight}}"></image>
+<image bindload="cusImageLoad" src="../../image/shili2.png" style="width:{{imageWidth}};height:{{imageHeight}}"></image>
+<image bindload="cusImageLoad" src="../../image/baozheng.png" style="width:{{imageWidth}};height:{{imageHeight}}"></image>
+
+
+  </view>
+</view>
+
+
+<view class="goods_bottom"></view>
+<view class="goods_bottom_btn">
+  <view>
+    <view class="goods_one">
+      <view class="goods_car_num">
+      
+      </view>
+    </view>
+       <view class="single_goods_infor">
+         <navigator url="../rr/rr">
+           <view class="goods_half_half blue">加入购物车</view>
+           
+         </navigator>
+        </view>
+  </view>
+
+</view>

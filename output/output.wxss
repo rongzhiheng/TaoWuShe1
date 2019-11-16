@@ -1,0 +1,141 @@
+/* pages/log/log.wxss */
+
+.logoinfo{
+  background: #fff;
+  width: 400rpx;
+  height: 200rpx; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.img{
+   width: 200rpx;
+  height: 200rpx;
+}
+
+.textarea-class{
+  width: 700rpx;
+  height: 300rpx;
+  border: 0px solid #d0d0d0;
+  margin-left: 9rpx;
+  
+}
+
+.btn-submit{
+  margin-bottom: 40rpx;
+  background:#b3d4db;
+  width:90%;
+  color:white;
+  height: 80rpx;
+  line-height: 60rpx;
+  font-size: 50rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  border-radius: 6rpx;
+  
+
+}
+
+.btn-reset{
+  width: 300rpx;
+  height: 100rpx;
+  margin-right: 50rpx;
+  float:right;
+}
+
+.view-style{
+  color :#000;
+  /* display: flex; */
+  margin-top: 10rpx;
+}
+
+.input-style{
+  color: #000;
+  width: 700rpx;
+  border: 0px solid #d0d0d0;
+  height: 80rpx;
+  margin-left: 9rpx;
+}
+
+.input-style2{
+  color: #000;
+  width: 250rpx;
+  border: 2rpx solid #d0d0d0;
+  height: 60rpx;
+  margin-top: 20rpx;
+}
+
+.input-style-address{
+  color: #000;
+  width: 600rpx;
+  border: 2rpx solid #d0d0d0;
+}
+
+.label-style{
+  color: #000;
+}
+
+.myView{
+  padding: 35%;
+  padding-top: 70%;
+}
+
+.content{
+  font-family: "Microsoft YaHei";
+}
+
+.switch-style{
+    position: left;
+}
+
+.hr{
+  width: 100%;
+  height: 10rpx;
+}
+
+.img{
+  margin-left:10px;
+  line-height: 100rpx;
+}
+
+.name{
+  padding-top: 30rpx;
+  padding-left: 20rpx;
+  padding-bottom: 30rpx;
+  font-size: 30rpx;
+  
+}
+
+.name1{
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+  padding-bottom: 10rpx;
+  font-size: 30rpx;
+}
+
+.name2{
+  padding-top: 30rpx;
+  padding-left: 20rpx;
+  padding-bottom: 30rpx;
+  font-size: 30rpx;
+  height: 300rpx;
+}
+.detail{
+  font-size: 30rpx;
+  position: absolute;
+  right: 20rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #888888;
+}
+
+.line{
+  border:2rpx solid #cccccc;
+  opacity: 0.2;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}

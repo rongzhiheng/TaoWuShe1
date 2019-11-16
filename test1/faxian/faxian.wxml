@@ -1,0 +1,40 @@
+
+<view class="page_bd"> 
+<form bindsubmit="formSubmit">
+
+<button formType="submit" class="btn">点击已有的商品</button>    
+</form>
+
+
+<view class="active_item" wx:for='{{re}}'>
+      
+        <view>
+            
+             <image bindload="cusImageLoad" src="{{item.pid}}" style="width: {{imageWidth}};height: {{imageHeight}}"></image>
+        </view>
+
+        <view class="active_item_infor">
+        
+            <view class="active_goods_name">
+               商品名称：{{item.goodsName}} <text>\n</text>
+               商品描述：{{item.describe}}<text>\n</text>
+               交易性质： {{item.nature}}<text>\n</text>
+               商品单价： {{item.price}}元<text>\n</text>
+               商品归类 {{item.type}}<text>\n</text>
+           
+           
+
+            </view>
+            <view class="active_item_infor">
+            
+             
+            
+            
+            </view>
+         
+      </view>
+    </view>
+
+
+</view>
+

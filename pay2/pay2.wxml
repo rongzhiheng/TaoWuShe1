@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<!--pages/paySuccessTrans/paySuccessTrans.wxml-->
+<view class="active_item"> 
+<view class="top">
+
+    <view class="wrap">
+
+      <image src="/image/success.jpg" class="img"></image>
+
+      <text class="word">支付成功</text>
+
+    </view>
+
+</view>
+
+
+</view>

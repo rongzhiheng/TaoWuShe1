@@ -1,0 +1,27 @@
+<view class='content'>
+
+  <view class='line'></view>
+  <view class='item'>
+    <view class='name1'>
+      <input class='input-style' type='text' placeholder="请输入您的姓名" maxlength='20' bindblur='inputName'></input>
+    </view>
+
+    <view class='name2'>
+      <input class='input-style' type='text' placeholder="请输入您的性别" maxlength='20' bindblur='inputSex'></input>
+    </view>
+    <view class='name3'>
+      <input class='input-style' type='text' placeholder="请输入您的电话号码" maxlength='20' bindblur='inputPhone'></input>
+    </view>
+    <view class='name4'>
+      <input class='input-style' type='text' placeholder="请输入您的邮箱" maxlength='20' bindblur='inputEmail'></input>
+    </view>
+    <view class='name5'>
+      <input class='input-style' type='text' placeholder="请输入您的收货地址" maxlength='20' bindblur='inputAddress'></input>
+    </view>
+  </view>
+
+  
+  
+  <button class='btn-submit' bindtap='submit'>提交</button>
+
+</view>

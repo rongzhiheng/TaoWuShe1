@@ -1,0 +1,57 @@
+<view class='content'>
+
+  <view class='line'></view>
+  <view class='item'>
+    <view class='name1'>
+      <input class='input-style' type='text' placeholder="请输入商品名称" maxlength='20' bindblur='inputName'></input>
+    </view>
+  </view>
+
+  <view class='line'></view>
+  <view class='item'>
+    <view class='name2'>
+      <textarea class='textarea-class' bindblur='inputDescribe' placeholder="请描述商品细节,100字以内" name="content" value='{{formdata}}' maxlength='100' />
+    </view>
+  </view>
+
+  <view class='line'></view>
+  <view class='item'>
+    <view class='name'> 商品类型：</view>
+    <view class='detail'>
+      <radio-group class='radio-group' bindchange='radioChangeGoodsClass'>
+        <label wx:for='{{items}}'>
+          <radio value='{{item.name}}'>{{item.value}}</radio>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='item'>
+    <view class='name'> 交易金额:</view>
+    <view class='detail'>
+      <input class='input-style2' type='text' placeholder="输入卖出价格" maxlength='20' bindblur='inputMoney'></input>
+    </view>
+  </view>
+
+  <view class='line'> </view>
+  <view class='item'>
+    <view class='name'>商品分类：</view>
+    <view class='detail'>
+      <radio-group class='radio-group' bindchange='radioChangeType'>
+        <label wx:for='{{tag?(tag == 1?trading:tutoring):0}}'>
+          <radio value='{{item.name}}'>{{item.value}}</radio>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='name'>在此处上传商品图片:</view>
+  <view>  
+    <block wx:for="{{img_arr}}">  
+      <image class='img' src='{{item}}'></image>  
+    </block>  
+    <image class='img' bindtap="upimg" src='../../image/add4.png'></image> 
+  </view>
+  <button class='btn-submit' bindtap='submit'>发布</button>
+
+</view>

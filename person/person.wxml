@@ -1,0 +1,40 @@
+
+<view class="page_bd"> 
+<form bindsubmit="formSubmit">
+
+<button formType="submit" class="btn">确认</button>    
+</form>
+
+
+<view class="active_item" wx:for='{{re}}'>
+      
+        
+
+        <view class="active_item_infor">
+        
+            <view class="active_goods_name">
+               姓名：{{item.name}} <text>\n</text>
+               性别：{{item.sex}}<text>\n</text>
+               电话号码： {{item.phone}}<text>\n</text>
+               电子邮箱： {{item.email}}<text>\n</text>
+               收货地址 {{item.address}}<text>\n</text>
+               <text>\n</text>
+               <text>\n</text>
+               <text>\n</text>
+           
+           
+
+            </view>
+            <view class="active_item_infor">
+            
+             
+            
+            
+            </view>
+         
+      </view>
+    </view>
+
+
+</view>
+

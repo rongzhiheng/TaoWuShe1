@@ -1,0 +1,40 @@
+
+<view class="page_bd"> 
+<form bindsubmit="formSubmit">
+<!--提交按钮  -->
+<input type="text" name="id" placeholder='请输入你需要的商品' style='border:5px solid #ccc;height:50px;'/>
+<button formType="submit" class="btn">搜索</button>    
+</form>
+
+
+<view class="active_item" wx:for='{{re}}'>
+      
+        <view>
+            
+             <image bindload="cusImageLoad" src="{{del}}" style="width: {{imageWidth}};height: {{imageHeight}}"></image>
+        </view>
+        <view class="active_item_infor">
+         <navigator url="../rr1/rr1">
+            <view class="active_goods_name">
+               商品名称：{{item.goodsName}} <text>\n</text>
+               商品描述：{{item.describe}}<text>\n</text>
+               交易性质： {{item.nature}}<text>\n</text>
+               商品单价： {{item.price}}元<text>\n</text>
+               商品归类 {{item.type}}<text>\n</text>
+           
+           
+
+            </view>
+            <view class="active_item_infor">
+            
+             
+            <text class="active_time">❤❤❤❤❤活动价还有五天结束❤❤❤❤❤</text>
+            
+            </view>
+          </navigator>
+      </view>
+    </view>
+
+
+</view>
+
